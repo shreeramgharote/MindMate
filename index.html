@@ -1,62 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MindMate – AI Mental Wellness for Students</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
 <body>
 
-<header>
-    <h1>MindMate</h1>
-    <p>AI-Powered Mental Wellness Assistant for Students</p>
-</header>
+  <!-- NAV -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">Mind<span>Mate</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#sdg">SDG</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how">How It Works</a></li>
+        <li><a href="#chatbot">Chat Now</a></li>
+      </ul>
+      <a href="#chatbot" class="btn btn-nav">Talk to MindMate</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
 
-<section>
-    <h2>About MindMate</h2>
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-bg-glow"></div>
+    <div class="container hero-content">
+      <div class="hero-tag">SDG 3 · Good Health &amp; Well-Being</div>
+      <h1 class="hero-title">Your mind<br/>deserves <em>support</em></h1>
+      <p class="hero-sub">MindMate is an AI-powered wellness companion built for students navigating academic stress, burnout, and anxiety — available anytime, judgment-free.</p>
+      <div class="hero-cta-group">
+        <a href="#chatbot" class="btn btn-primary">Start a Conversation</a>
+        <a href="#about" class="btn btn-ghost">Learn More</a>
+      </div>
+      <div class="hero-pills">
+        <span class="pill">Stress Relief</span>
+        <span class="pill">Study Support</span>
+        <span class="pill">Anxiety Guidance</span>
+        <span class="pill">24/7 Available</span>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+  </section>
 
-    <p>
-        MindMate is an AI-powered chatbot developed
-        to support students dealing with stress,
-        anxiety, motivation issues, academic pressure,
-        and mental wellness challenges.
-    </p>
-</section>
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-label">About the Project</div>
+      <div class="about-grid">
+        <div class="about-text">
+          <h2 class="section-title">Built for students,<br/>by a student.</h2>
+          <p>MindMate was created at VJTI as part of a technology project addressing the United Nations Sustainable Development Goals. It emerged from a simple observation: students are struggling, but the path to professional help often feels too long, too costly, or too stigmatised.</p>
+          <p>This AI assistant acts as an accessible first point of contact — a non-judgmental space to express, reflect, and find practical coping tools. It doesn't replace a counsellor, but it's always there when one isn't.</p>
+        </div>
+        <div class="about-cards">
+          <div class="stat-card">
+            <div class="stat-icon">🎓</div>
+            <div class="stat-label">Academic Burnout</div>
+            <div class="stat-body">A leading cause of dropout and declining performance among engineering students.</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🔒</div>
+            <div class="stat-label">Stigma Barrier</div>
+            <div class="stat-body">Many students delay seeking help due to fear of judgment or social stigma.</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-icon">🌐</div>
+            <div class="stat-label">Access Gap</div>
+            <div class="stat-body">Professional counselling is often unavailable, expensive, or difficult to access.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>SDG 3: Good Health and Well-Being</h2>
+  <!-- SDG SECTION -->
+  <section class="section sdg-section" id="sdg">
+    <div class="container">
+      <div class="section-label">United Nations</div>
+      <h2 class="section-title centered">Aligned with <span class="accent">SDG 3</span></h2>
+      <p class="section-sub centered">Good Health and Well-Being</p>
+      <div class="sdg-grid">
+        <div class="sdg-badge">
+          <div class="sdg-number">3</div>
+          <div class="sdg-text">
+            <strong>SDG 3</strong>
+            <span>Good Health &amp;<br/>Well-Being</span>
+          </div>
+        </div>
+        <div class="sdg-points">
+          <div class="sdg-point">
+            <div class="sdg-point-icon">💚</div>
+            <div>
+              <strong>Mental Health Access</strong>
+              <p>MindMate removes barriers by providing free, instant emotional support through a conversational AI — no appointment, no waiting room.</p>
+            </div>
+          </div>
+          <div class="sdg-point">
+            <div class="sdg-point-icon">🌍</div>
+            <div>
+              <strong>Social Impact</strong>
+              <p>Targeting one of the most under-served groups — college students — MindMate scales mental wellness support to anyone with a smartphone.</p>
+            </div>
+          </div>
+          <div class="sdg-point">
+            <div class="sdg-point-icon">🤝</div>
+            <div>
+              <strong>Early Intervention</strong>
+              <p>By offering guidance before a crisis, MindMate helps students build resilience, reducing the burden on institutional counselling resources.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <p>
-        This project contributes to Sustainable
-        Development Goal 3 by promoting mental
-        health awareness and providing accessible
-        support for students.
-    </p>
-</section>
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-label">What MindMate Can Do</div>
+      <h2 class="section-title centered">Six ways to feel better</h2>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feat-icon">🧘</div>
+          <h3>Stress Management</h3>
+          <p>Evidence-backed techniques to help you decompress, prioritise, and regain control during high-pressure moments.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">💆</div>
+          <h3>Anxiety Support</h3>
+          <p>Grounding exercises, calming strategies, and empathetic conversation to ease exam nerves and daily anxiety.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🚀</div>
+          <h3>Motivation Guidance</h3>
+          <p>When procrastination sets in, MindMate helps you reconnect with your goals and build momentum, one step at a time.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">📚</div>
+          <h3>Study Techniques</h3>
+          <p>Personalised study tips, time management frameworks, and methods to improve focus and retention.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feat-icon">🔗</div>
+          <h3>Mental Health Resources</h3>
+          <p>Curated links to professional helplines, self-help tools, and wellness content when deeper support is needed.</p>
+        </div>
+        <div class="feature-card feat-highlight">
+          <div class="feat-icon">🌙</div>
+          <h3>Available 24 / 7</h3>
+          <p>Whether it's 2 AM before a submission or a quiet Sunday afternoon, MindMate is always ready to listen.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Key Features</h2>
+  <!-- HOW IT WORKS -->
+  <section class="section" id="how">
+    <div class="container">
+      <div class="section-label">Process</div>
+      <h2 class="section-title centered">How it works</h2>
+      <div class="flow">
+        <div class="flow-step">
+          <div class="flow-circle">1</div>
+          <div class="flow-label">You Share</div>
+          <div class="flow-body">Tell MindMate how you're feeling — there's no wrong answer.</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-circle">2</div>
+          <div class="flow-label">AI Listens</div>
+          <div class="flow-body">The chatbot responds with empathy, not scripts.</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-circle">3</div>
+          <div class="flow-label">Get Guidance</div>
+          <div class="flow-body">Receive practical, evidence-informed coping strategies.</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-circle">4</div>
+          <div class="flow-label">Find Resources</div>
+          <div class="flow-body">Access the right tools or helplines for your situation.</div>
+        </div>
+        <div class="flow-arrow">→</div>
+        <div class="flow-step">
+          <div class="flow-circle">5</div>
+          <div class="flow-label">Feel Better</div>
+          <div class="flow-body">Build resilience and return to your work with renewed clarity.</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <ul>
-        <li>Stress Management Support</li>
-        <li>Anxiety Assistance</li>
-        <li>Motivational Guidance</li>
-        <li>Study Tips</li>
-        <li>Mental Health Resources</li>
-        <li>24/7 AI Support</li>
-    </ul>
-</section>
+  <!-- WHY MENTAL HEALTH MATTERS -->
+  <section class="section why-section" id="why">
+    <div class="container">
+      <div class="section-label">The Problem We're Solving</div>
+      <h2 class="section-title centered">Why student mental health matters</h2>
+      <div class="why-grid">
+        <div class="why-card">
+          <div class="why-icon">📉</div>
+          <h4>Academic Stress</h4>
+          <p>Chronic study pressure, assignment overload, and competition take a measurable toll on student wellbeing and performance.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🔥</div>
+          <h4>Burnout</h4>
+          <p>Students routinely push beyond their limits — leading to emotional exhaustion, detachment, and loss of purpose.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">😰</div>
+          <h4>Anxiety</h4>
+          <p>Exam anxiety and social pressures are among the most common mental health complaints reported by college students globally.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">🏢</div>
+          <h4>Career Pressure</h4>
+          <p>Placement season intensifies stress — uncertainty, peer comparison, and rejection weigh heavily on final-year students.</p>
+        </div>
+        <div class="why-card">
+          <div class="why-icon">💛</div>
+          <h4>Emotional Well-being</h4>
+          <p>Loneliness, self-doubt, and low self-esteem often go unaddressed, silently undermining academic and personal growth.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section>
-    <h2>Future Scope</h2>
+  <!-- CHATBOT -->
+  <section class="section chatbot-section" id="chatbot">
+    <div class="container">
+      <div class="section-label">Try It Now</div>
+      <h2 class="section-title centered">Talk to MindMate</h2>
+      <p class="section-sub centered">Start a conversation below. Share what's on your mind — MindMate is here to help, anytime.</p>
+      <div class="chatbot-note">
+        <span>🔒</span>
+        <span>Your conversation is private. MindMate does not store personal data.</span>
+      </div>
+    </div>
+    <!-- Botpress chatbot widget appears via floating button injected by scripts below -->
+    <!-- The widget opens as a floating chat bubble in the corner of the page -->
+    <div class="chatbot-hint">
+      <div class="chatbot-hint-inner">
+        <div class="chatbot-pulse"></div>
+        <p>Look for the <strong>chat bubble</strong> in the bottom-right corner of your screen to open MindMate.</p>
+      </div>
+    </div>
+  </section>
 
-    <ul>
-        <li>Voice-Based Interaction</li>
-        <li>Multilingual Support</li>
-        <li>Mobile Application</li>
-        <li>Sentiment Analysis</li>
-        <li>Counselor Integration</li>
-    </ul>
-</section>
+  <!-- RESOURCES -->
+  <section class="section" id="resources">
+    <div class="container">
+      <div class="section-label">Self-Help Toolkit</div>
+      <h2 class="section-title centered">Resources for students</h2>
+      <div class="resource-grid">
+        <div class="resource-card">
+          <div class="resource-icon">🧠</div>
+          <h4>Stress Management</h4>
+          <p>Identify stressors, set boundaries, and use structured relaxation techniques to manage daily academic pressure.</p>
+          <span class="resource-tag">Wellbeing</span>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">🌬️</div>
+          <h4>Breathing Exercises</h4>
+          <p>Box breathing, 4-7-8 breathing, and diaphragmatic techniques to activate the parasympathetic nervous system.</p>
+          <span class="resource-tag">Calm</span>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">📖</div>
+          <h4>Study Techniques</h4>
+          <p>Pomodoro method, spaced repetition, active recall — techniques proven to improve retention and reduce last-minute panic.</p>
+          <span class="resource-tag">Productivity</span>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">😴</div>
+          <h4>Sleep Hygiene</h4>
+          <p>Consistent sleep schedules, screen limits before bed, and relaxation routines to improve rest and cognitive performance.</p>
+          <span class="resource-tag">Recovery</span>
+        </div>
+        <div class="resource-card">
+          <div class="resource-icon">⏱️</div>
+          <h4>Time Management</h4>
+          <p>Priority matrices, time-blocking, and realistic planning frameworks to reclaim control over your schedule.</p>
+          <span class="resource-tag">Productivity</span>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer>
-    <p>MindMate | SDG 3 Project | VJTI</p>
-</footer>
+  <!-- FUTURE SCOPE -->
+  <section class="section future-section" id="future">
+    <div class="container">
+      <div class="section-label">What's Next</div>
+      <h2 class="section-title centered">Future scope</h2>
+      <p class="section-sub centered">MindMate is just the beginning. Here's where the project is headed.</p>
+      <div class="future-grid">
+        <div class="future-item">
+          <div class="future-dot"></div>
+          <div>
+            <strong>Voice-Based Interaction</strong>
+            <p>Hands-free support through voice input and text-to-speech responses.</p>
+          </div>
+        </div>
+        <div class="future-item">
+          <div class="future-dot"></div>
+          <div>
+            <strong>Multilingual Support</strong>
+            <p>Expanding access to students across India in Hindi, Marathi, and regional languages.</p>
+          </div>
+        </div>
+        <div class="future-item">
+          <div class="future-dot"></div>
+          <div>
+            <strong>Mobile Application</strong>
+            <p>A dedicated Android and iOS app for on-the-go mental wellness support.</p>
+          </div>
+        </div>
+        <div class="future-item">
+          <div class="future-dot"></div>
+          <div>
+            <strong>Sentiment Analysis</strong>
+            <p>Real-time emotional state detection to tailor responses more precisely.</p>
+          </div>
+        </div>
+        <div class="future-item">
+          <div class="future-dot"></div>
+          <div>
+            <strong>Counsellor Integration</strong>
+            <p>Seamless escalation pathway linking students directly to human counsellors.</p>
+          </div>
+        </div>
+        <div class="future-item">
+          <div class="future-dot"></div>
+          <div>
+            <strong>Personalised Wellness Plans</strong>
+            <p>AI-generated weekly wellness schedules based on individual patterns and goals.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2026/06/22/05/20260622050828-P2Q0ZO4C.js" defer></script>
+  <!-- TEAM -->
+  <section class="section" id="team">
+    <div class="container">
+      <div class="section-label">The Creator</div>
+      <h2 class="section-title centered">Meet the developer</h2>
+      <div class="team-card-wrap">
+        <div class="team-card">
+          <div class="team-avatar">SG</div>
+          <h3>Shreeram Gharote</h3>
+          <div class="team-role">Developer &amp; Researcher</div>
+          <div class="team-meta">
+            <span>🏛️ VJTI, Mumbai</span>
+            <span>⚙️ Mechanical Engineering</span>
+            <span>🎯 SDG 3 Project</span>
+          </div>
+          <p class="team-bio">Passionate about using technology to solve real human problems. MindMate was built to make mental wellness more accessible for every student who needs it.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">Mind<span>Mate</span></div>
+          <p>AI-Powered Mental Wellness Assistant for Students. Aligned with the United Nations Sustainable Development Goal 3.</p>
+          <div class="footer-sdg-badge">SDG 3 · Good Health &amp; Well-Being</div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h5>Navigation</h5>
+            <a href="#about">About</a>
+            <a href="#sdg">SDG Alignment</a>
+            <a href="#features">Features</a>
+            <a href="#how">How It Works</a>
+            <a href="#chatbot">Talk to MindMate</a>
+          </div>
+          <div class="footer-col">
+            <h5>Resources</h5>
+            <a href="#resources">Stress Management</a>
+            <a href="#resources">Breathing Exercises</a>
+            <a href="#resources">Study Techniques</a>
+            <a href="#resources">Sleep Hygiene</a>
+            <a href="#future">Future Scope</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 MindMate · Shreeram Gharote · VJTI Mechanical Engineering</p>
+        <p>Built as part of an SDG-aligned academic project. Not a substitute for professional mental health care.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTPRESS EMBED SCRIPTS -->
+  <script src="https://cdn.botpress.cloud/webchat/v3.6/inject.js"></script>
+  <script src="https://files.bpcontent.cloud/2026/06/22/05/20260622050828-P2Q0ZO4C.js" defer></script>
+
+  <script src="script.js"></script>
 </body>
+</html>
